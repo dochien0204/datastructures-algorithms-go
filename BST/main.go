@@ -31,14 +31,14 @@ func main() {
 	t.Insert(15)
 	t.Insert(65)
 	fmt.Print("Inorder Traversal: ")
-	bst.InorderTraversal(t.Root)
+	t.InorderTraversal(t.Root)
 	fmt.Println()
 
 	fmt.Print("Pre-order Traversal: ")
-	bst.PreOrderTraversal(t.Root)
+	t.PreOrderTraversal(t.Root)
 	fmt.Println()
 
 	fmt.Print("Post-order Traversal: ")
-	bst.PostOrderTraversal(t.Root)
+	t.PostOrderTraversal(t.Root)
 	fmt.Println()
 }

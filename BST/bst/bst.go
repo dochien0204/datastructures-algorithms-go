@@ -63,29 +63,29 @@ func (n *Node) insert(data int) {
 	}
 }
 
-func InorderTraversal(root *Node) {
+func (t *Tree) InorderTraversal(root *Node) {
 	if root == nil {
 		return
 	}
-	InorderTraversal(root.Left)
+	t.InorderTraversal(root.Left)
 	fmt.Print(root.Key, " ")
-	InorderTraversal(root.Right)
+	t.InorderTraversal(root.Right)
 }
 
-func PreOrderTraversal(root *Node) {
+func (t *Tree) PreOrderTraversal(root *Node) {
 	if root == nil {
 		return
 	}
 	fmt.Print(root.Key, " ")
-	PreOrderTraversal(root.Left)
-	PreOrderTraversal(root.Right)
+	t.PreOrderTraversal(root.Left)
+	t.PreOrderTraversal(root.Right)
 }
 
-func PostOrderTraversal(root *Node) {
+func (t *Tree) PostOrderTraversal(root *Node) {
 	if root == nil {
 		return
 	}
-	PostOrderTraversal(root.Left)
-	PostOrderTraversal(root.Right)
+	t.PostOrderTraversal(root.Left)
+	t.PostOrderTraversal(root.Right)
 	fmt.Print(root.Key, " ")
 }
